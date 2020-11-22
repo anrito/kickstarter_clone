@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Titillium Web", sans-serif;
+}
+
+div.layout {
+  display: grid;
+  grid-template-areas: "area-1 area-1" "area-2 area-2" "area-3 area-4" "area-5 area-5" "area-6 area-6";
+  grid-template-rows: 65px 60px auto auto auto auto;
+}
+
+div.layout > div {
+  background-color: #ffffff;
+}
+
+.header {
+  grid-area: area-1;
+}
+.menu {
+  grid-area: area-2;
+}
+.futured_projects {
+  grid-area: area-3;
+}
+.recomended {
+  grid-area: area-4;
+}
+.subscribe {
+  grid-area: area-5;
+}
+.fresh_favorites {
+  grid-area: area-6;
+}
+
+/* header item */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.header .header-middle {
+  text-align: center;
+  font-size: 13px;
+}
+.header .logo img {
+  height: 19px;
+}
+
+/* menu item */
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.menu > a {
+  margin-left: 35px;
+  font-size: 16px;
+  color: #656969;
+  text-decoration: none;
+}
+
+.menu > a:hover {
+  color: #037362;
+  text-decoration: underline;
+}
